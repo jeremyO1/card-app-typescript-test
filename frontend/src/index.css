@@ -1,0 +1,49 @@
+/* src/index.css */
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --button-background-color: #e0e0e0;
+    --button-text-color: #000000;
+    --input-background-color: #f0f0f0;
+    --input-text-color: #000000;
+    --textarea-background-color: #f0f0f0;
+    --textarea-text-color: #000000;
+}
+
+[data-theme='dark'] {
+    --background-color: #333333;
+    --text-color: #ffffff;
+    --button-background-color: #555555;
+    --button-text-color: #ffffff;
+    --input-background-color: #444444;
+    --input-text-color: #ffffff;
+    --textarea-background-color: #444444;
+    --textarea-text-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    font-family: Arial, sans-serif; /* Ensure consistent font family */
+}
+
+button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input, textarea {
+    background-color: var(--input-background-color);
+    color: var(--input-text-color);
+}
+
+

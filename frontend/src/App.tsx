@@ -9,9 +9,12 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import { createContext } from "react";
 
+export const ThemeContext = createContext("light")
 export default function App() {
   return (
+    <div className="App" id="light">
     <section>
   <Router>
     <EntryProvider>
@@ -27,6 +30,8 @@ export default function App() {
     </EntryProvider>
     </Router>
     </section>
-    
+    </div>
   );
 }
+
+
